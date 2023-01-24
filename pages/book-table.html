@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Icon  -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/book-table.css">
+    <title>Treat Me- Book Table</title>
+</head>
+
+<!-- Body start here -->
+<!-- ............... -->
+
+<body>
+    <!-- header part start here -->
+    <!-- ...................... -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"> <img src="../img/logo-main.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/all-item.html">Menu</a></li>
+                <li><a href="..//pages/gallery.html">Gallery</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><span class="nav-span"><a href="../pages/book-table.html">Book Table</a></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ######################## -->
+    <!-- Mobile Menu start here -->
+    <!-- ######################## -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-img">
+            <a href="../index.html"> <img src="../img/logo-main.png" alt="logo"></a>
+        </div>
+        <div class="mobile-nav-icon">
+            <span onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="nav" class="overlay">
+            <a class="closebtn" onclick="closeNav()" href="javascript:void()">&times;</a>
+            <div class="overlay-content">
+                <a onclick="closeNav()" href="../index.html">Home</a>
+                <a onclick="closeNav()" href="../pages/all-item.html">Menu</a>
+                <a onclick="closeNav()" href="../pages/gallery.html">Gallery</a>
+                <a onclick="closeNav()" href="../pages/about.html">About</a></a>
+                <a onclick="closeNav()" href="../pages/book-table.html">Book Table</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("nav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("nav").style.width = "0%";
+        }
+
+    </script>
+    <!-- Book Table section start here -->
+    <!-- .......................... -->
+    <div class="form-title">
+        <h2>Book a <span class="form-span">Table</span></h2>
+    </div>
+
+    <section class="form-container">
+        <form class="form-container-content" action="../pages/thank-you.html">
+
+            <input type="text" name="" id="" placeholder="Enter Your Name" required> <br>
+
+            <input type="number" name="" id="" placeholder="Enter Your Phone Number" required> <br>
+
+            <input type="email" name="" id="" placeholder="Enter Your Email" required> <br>
+
+            <input type="number" name="" id="" placeholder="How Many People?" required> <br>
+
+            <input type="date" name="" id="" placeholder="Select Your Date" required> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="form-container-img">
+            <img src="../img/logo-main.png" alt="side-image02">
+        </div>
+    </section>
+
+    <!-- Footer section start here -->
+    <!-- .................................... -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="footer-page">
+                    <p>Banker More, Rangpur</p>
+                    <p>Call:+8801767304920</p>
+                    <p>treatme@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-content order-logo">
+                <div class="footer-logo">
+                    <img src="../img/logo-main.png" alt="logo-main">
+                </div>
+                <div class="footer-page-logo">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ea facilis soluta expedita esse
+                        <br> optio
+                        corporis quia facere sed beatae aperiam?
+                    </p>
+                </div>
+                <div class="social-icon">
+                    <img src="../img/social icon/facebook (2).png" alt="facebook">
+                    <img src="../img/social icon/instagram (1).png" alt="instagram">
+                    <img src="../img/social icon/linkedin.png" alt="linkdin">
+                    <img src="../img/social icon/twitter (1).png" alt="twitter">
+                    <img src="../img/social icon/youtube.png" alt="youtube">
+                </div>
+                <div class="copyright">
+                    <p>©All rights reserved by Lalin</p>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-title">
+                    <h2>Opening Hours</h2>
+                </div>
+                <div class="footer-page">
+                    <p>Everyday</p>
+                    <p>10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
